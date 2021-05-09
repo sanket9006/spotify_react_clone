@@ -22,7 +22,7 @@ function Sidebar() {
             <hr />
 
             {
-               playlists.items.map((playlist) => {
+               playlists?.items?.map((playlist) => {
                 <SidebarOption title={playlist} ></SidebarOption>
                })
             }
