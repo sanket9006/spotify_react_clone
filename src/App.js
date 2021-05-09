@@ -20,18 +20,14 @@ function App() {
 
   useEffect(() => {
     const _token = sendbackURL()
-    // console.log(_token)
     window.location.hash = ""
 
     if (_token) {  
-
       dispatch({
         type: "SET_TOKEN",
         token: _token
       })
-
       spotify.setAccessToken(_token)
-
       spotify.getMe().then((user) => {
         dispatch({
           type: "SET_USER",
@@ -40,10 +36,6 @@ function App() {
       });
     }
   }, [])
-
-  console.log("🤷‍♀️  => ", user);
-  console.log("🤷‍♀️  => ", token);
-
   return (
     <div className="App">
       {token ? <Players /> : <Login />}
