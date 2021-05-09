@@ -17,6 +17,7 @@ function App() {
 
   const spotify = new SpotifyWebApi();
   const [{ user, token }, dispatch] = useDataLayerValue();
+  const _id = null;
 
   useEffect(() => {
     const _token = sendbackURL()
@@ -37,13 +38,14 @@ function App() {
         });
       });
 
-      spotify.getUserPlaylists().then((playlist) => {
+
+      spotify.getUserPlaylists().then((playlists) => {
         console.log("playlists insidde app.js")
-        console.log(playlist)
+        console.log(playlists)
 
         dispatch({
           type: "SET_PLAYLISTS",
-          playlists: playlist,
+          playlists,
         });
       });
     }
