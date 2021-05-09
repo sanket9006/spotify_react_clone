@@ -13,19 +13,10 @@ function Players() {
     return (
         <div className="player">
             <div className="player__body">
-
-                <div className="sidebar">
-                    <Sidebar />
-                </div>
-
-                <div className="sidebar_body">
-                    <Player_body />
-                </div>
-
-                <Footer />
-
+                <Sidebar />
+                <Player_body />
             </div>
-
+                <Footer />
         </div>
     )
 }

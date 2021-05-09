@@ -22,20 +22,33 @@ function App() {
     const _token = sendbackURL()
     window.location.hash = ""
 
-    if (_token) {  
+    if (_token) {
+      console.log(_token)
       dispatch({
         type: "SET_TOKEN",
         token: _token
       })
       spotify.setAccessToken(_token)
+
       spotify.getMe().then((user) => {
         dispatch({
           type: "SET_USER",
           user: user,
         });
       });
+
+      spotify.getUserPlaylists().then((playlist) => {
+        console.log("playlists insidde app.js")
+        console.log(playlist)
+
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlist,
+        });
+      });
     }
   }, [])
+
   return (
     <div className="App">
       {token ? <Players /> : <Login />}
