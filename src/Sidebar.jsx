@@ -22,11 +22,9 @@ function Sidebar() {
             <hr />
 
             {
-                console.log("Insode the SIdebar Component")
-            }
-
-            {
-                console.log(playlists)
+               playlists.items.map((playlist) => {
+                <SidebarOption title={playlist} ></SidebarOption>
+               })
             }
 
         </div>
