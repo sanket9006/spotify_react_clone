@@ -20,9 +20,12 @@ function Footer() {
     return (
         <div className="footer">
             <div className="footer__left">
-                <ShuffleIcon className="footer__green" />
-                <ShuffleIcon className="footer__green" />
-                <ShuffleIcon className="footer__green" />
+                <img className="album_cover" src="https://img.wynk.in/unsafe/275x275/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1531202322/srch_adityamusic_INA091816158.jpg" alt=""></img>
+
+                <div className="song__info">
+                    <h4>Inkem Inkem Inkem Kaavaale</h4>
+                    <p>Geetha Govindam</p>
+                </div>
             </div>
 
             <div className="footer__center">

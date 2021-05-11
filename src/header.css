@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__left {
+  background-color: white;
+  color: gray;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right > h4 {
+  margin-left: 10px;
+  text-transform: lowercase;
+}
+
+.header__left > input {
+  border: none;
+  width: 100%;
+}

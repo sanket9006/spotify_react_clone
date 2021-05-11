@@ -8,13 +8,13 @@ import Player_body from './Player_body'
 import Sidebar from './Sidebar';
 import Footer from './Footer'
 
-function Players() {
+function Players({spotify}) {
 
     return (
         <div className="player">
             <div className="player__body">
                 <Sidebar />
-                <Player_body />
+                <Player_body spotify={spotify}/>
             </div>
                 <Footer />
         </div>

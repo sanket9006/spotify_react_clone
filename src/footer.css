@@ -13,6 +13,9 @@
 .footer__left {
   display: flex;
   flex: 0.3;
+
+  min-width: 360px;
+  color: white;
 }
 
 .footer__right {
@@ -30,4 +33,24 @@
   align-items: center;
   max-width: 300px;
   justify-content: space-between;
+}
+
+.album_cover {
+  height: 60px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.footer__icon:hover,
+.footer__green:hover {
+  transform: scale(1.2);
+  transition: transform 400ms ease-in-out;
+}
+
+.song__info > p {
+  font-size: 12px;
+}
+
+.song__info > h4 {
+  margin-bottom: 5px;
 }
