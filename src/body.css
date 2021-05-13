@@ -32,3 +32,18 @@
 .body_text_info > p {
   font-size: 14px;
 }
+
+.player_body_icons {
+  display: flex;
+  align-items: center;
+}
+
+.player_body_icons > .MuiSvgIcon-root {
+  margin: 30px 10px;
+  font-size: 50px;
+}
+
+.player_body_icons > .MuiSvgIcon-root:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
