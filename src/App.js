@@ -48,12 +48,19 @@ function App() {
           playlists,
         });
       });
+
+      spotify.getPlaylist("37i9dQZEVXcCB71TkMiJ0A").then((response) => {
+        dispatch({
+          type: "DISCOVER_WEEKLY",
+          discoverweekly : response,
+        })});
+
     }
   }, [])
 
   return (
     <div className="App">
-      {token ? <Players spotify={spotify}/> : <Login />}
+      {token ? <Players spotify={spotify} /> : <Login />}
     </div>
   );
 }
