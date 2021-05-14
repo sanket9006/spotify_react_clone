@@ -1,4 +1,4 @@
-## Steps to deploy app on Github Pages
+## Deploy app on Github Pages
 
 First install github pages npm package
 
