@@ -1,0 +1,17 @@
+.SongRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.SongRow:hover {
+  cursor: pointer;
+}
+
+.Song_info {
+  margin-left: 20px;
+}
+
+.Song_info > p {
+  color: gray;
+}
